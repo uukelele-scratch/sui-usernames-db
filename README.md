@@ -16,6 +16,8 @@ python -m pip install -r requirements.txt
 python db.py
 ```
 
+> [!NOTE]
+> Alternatively, the database is available in the [Releases](https://github.com/uukelele-scratch/sui-usernames-db/releases/latest) tab. You can download this and use it, to save time, but note that it is 750MB.
 
 3. Run the API
 
