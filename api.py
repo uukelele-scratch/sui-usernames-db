@@ -67,7 +67,7 @@ async def get_user_id(username: str):
     """
     user = query_db("SELECT * FROM users WHERE username = ?", [username], one=True)
     if user is None:
-        raise HTTPException(status_code=404, detail="User not found") [20]
+        raise HTTPException(status_code=404, detail="User not found")
     return user
 
 @router.get(
@@ -98,7 +98,7 @@ async def get_username(user_id: int):
     """
     user = query_db("SELECT * FROM users WHERE user_id = ?", [user_id], one=True)
     if user is None:
-        raise HTTPException(status_code=404, detail="User ID not found") [20]
+        raise HTTPException(status_code=404, detail="User ID not found")
     return user
 
 app.include_router(router, prefix="/v1")
